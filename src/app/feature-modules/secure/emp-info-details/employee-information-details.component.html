@@ -1,0 +1,420 @@
+<div class="row pull-right " id="bread">
+    <ol class="breadcrumb breadcrumb-arrow">
+        <li><a href="#">Human Resource Management</a></li>
+        <li class="active"><span>Employee Information</span></li>
+    </ol>
+</div>
+<div id="pnlOrganizationDetails" class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+        <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Employee Information</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Date of Creation</span>
+                    <!-- <input type="text" [(ngModel)]="empDetails.CreationDate" class="form-control"> -->
+                    <!-- <input matInput [matDatepicker]="datepicker1" placeholder="Start Date"
+                        [(ngModel)]="empDetails.CreationDate" required> -->
+                    <div>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="dp" [(ngModel)]="empDetails.CreationDate">
+                            <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                            <mat-datepicker #dp>
+                            </mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Login User Name</span>
+                    <input type="text" [(ngModel)]="empDetails.LoginUserName" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Comployee Under</span>
+                    <select class="form-control" [(ngModel)]="empDetails.Comployee">
+                        <option value="--Select Status--">--Select Status--</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Contractor</span>
+                    <input type="text" [(ngModel)]="empDetails.Contractor" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Biometric ID</span>
+                    <input type="text" [(ngModel)]="empDetails.BioMetricId" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Employee Name</span>
+                    <input type="text" [(ngModel)]="empDetails.EmployeeNmae" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Gender</span>
+                    <input type="text" [(ngModel)]="empDetails.Gender" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Employee Division</span>
+                    <select class="form-control" [(ngModel)]="empDetails.EmployeeDivision">
+                        <option value="--Select Status--">--Select Status--</option>
+                        <option>Staff</option>
+                        <option>Worker</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Date of Birth</span>
+                    <div>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="dob" [(ngModel)]="empDetails.DOB">
+                            <mat-datepicker-toggle matSuffix [for]="dob"></mat-datepicker-toggle>
+                            <mat-datepicker #dob>
+                            </mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Father / Spouse Name</span>
+                    <input type="text" [(ngModel)]="empDetails.FatherSpouseName" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Relationship</span>
+                    <input type="text" [(ngModel)]="empDetails.RelationShip" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Contact Number</span>
+                    <input type="text" type="number" [pattern]="mobNumberPattern" maxlength="10" #contact="ngModel"
+                        [(ngModel)]="empDetails.ContactNumber" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Alternative Contact No</span>
+                    <input type="number" [(ngModel)]="empDetails.AlternateContactNumber" maxlength="10"
+                        class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Email Id</span>
+                    <input type="email" [(ngModel)]="empDetails.Email" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Marital Status</span>
+                    <select class="form-control" [(ngModel)]="empDetails.MaritalStatus">
+                        <option value="--Select Status--">--Select Status--</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <mat-form-field>
+                    <span class="label-control">No. of Dependents</span>
+                    <input type="number" matInput [(ngModel)]="empDetails.NoOfDependends" class="form-control">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+
+                <span class="label-control">Present Address</span>
+                <textarea rows="2" cols="50" class="form-control" [(ngModel)]="empDetails.PresentAddress">
+                        </textarea>
+
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Permanent Address</span>
+                    <textarea rows="2" cols="50" class="form-control" [(ngModel)]="empDetails.PermanantAddress">
+
+                        </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Blood Group</span>
+                    <input type="text" [(ngModel)]="empDetails.BloodGroup" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Department</span>
+                    <input type="text" [(ngModel)]="empDetails.Department" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Sub Department</span>
+                    <input type="text" [(ngModel)]="empDetails.SubDepartment" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Designation</span>
+                    <input type="text" [(ngModel)]="empDetails.Designation" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Skills</span>
+                    <input type="text" [(ngModel)]="empDetails.Skills" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Employment Joining Date</span>
+
+                    <div>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="ejd" [(ngModel)]="empDetails.EmpJoiningDate">
+                            <mat-datepicker-toggle matSuffix [for]="ejd"></mat-datepicker-toggle>
+                            <mat-datepicker #ejd>
+                            </mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <mat-form-field>
+                    <span class="label-control">In House Exp. as on Date </span>
+                    <input [(ngModel)]="empDetails.InHouseExperience" matInput class="form-control">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <mat-form-field>
+                    <span class="label-control">Total Experience </span>
+                    <input [(ngModel)]="empDetails.TotalExperience" matInput class="form-control">
+                </mat-form-field>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">PF Number (UIN)</span>
+                    <input type="text" [(ngModel)]="empDetails.PfNumber" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">ESI Number</span>
+                    <input type="text" [(ngModel)]="empDetails.ESINumer" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Aadhar Card No</span>
+                    <input type="text" [(ngModel)]="empDetails.AadharNumber" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Passport Number</span>
+                    <input type="text" [(ngModel)]="empDetails.PassportNumber" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Permanent Account No (PAN)</span>
+                    <input type="text" [(ngModel)]="empDetails.PanNumber" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Permanent or</span>
+                    <input type="text" [(ngModel)]="empDetails.PermanantDesc" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+        <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Payroll Details (As on Date):</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Monthly / Daily</span>
+                    <select class="form-control" [(ngModel)]="payrollInfo.PaymentTenure">
+                        <option value="--Select Status--">--Select Status--</option>
+                        <option>Monthly</option>
+                        <option>Yearly</option>
+                        <option>Daily</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Basic Salary</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.Basic" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">House Rental Allowance (HRA)</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control" [(ngModel)]="payrollInfo.HRA">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Dearness Allowance (DA)</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.DearnessAllowance">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Conveyance Allowance (CA)</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.ConveyanceAllowance">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Medical Allowance (MA)</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.MedicalAllowance">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Incentives</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.Incentives">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Other Allowances (OA)</span>
+                    <input type="text" (change)="CalculateTotal()" class="form-control"
+                        [(ngModel)]="payrollInfo.OtherAllowances">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Total Salary</span>
+                    <input type="text" class="form-control" disabled [(ngModel)]="payrollInfo.TotalSalary">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+        <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Farmer Document</h4>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Name of the Document</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span class="label-control">Document Upload</span>
+                    <input type="file" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+        <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Farmer Details</h4>
+    </div>
+    <div class="card-body" style="overflow-y:auto">
+        <div class="row m-b-25">
+            <div class="col-md-12">
+                <div>
+                    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                        cellpadding="4" id="grdOrganizations">
+                        <tbody>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Name of the Document</th>
+                                <th>Dcount Path</th>
+                            </tr>
+                            <tr *ngFor="let farmer of farmerDetails;let i = index">
+                                <td>
+                                    <span>{{i+1}}</span>
+                                </td>
+                                <td>
+                                    <span>{{farmer.Name}}</span>
+                                </td>
+                                <td>
+                                    <span> {{farmer.DocPath}}</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="row pull-right btSection">
+        <div class="col-md12">
+            <input type="submit" value="Add Employee" (click)="addEmployee()" class="btn btn-info">
+            <input type="submit" value="Save" (click)="saveEmployeeDetails()" class="btn btn-info">
+            <input type="submit" value="Find" (click)="findEmployee()" class="btn btn-info">
+            <input type="submit" value="Modify" (click)="modifyEmployee()" class="btn btn-info">
+            <input type="submit" value="Clear" (click)="clearEmployeeDetails()" class="btn btn-info">
+        </div>
+    </div>
+</div>
+<div class="card">
+    Employee Details : {{empDetails| json}}
+</div>

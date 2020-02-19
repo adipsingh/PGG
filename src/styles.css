@@ -1,0 +1,54 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+    font-family: 'Anastasia Regular';
+    src: url(./assets/fonts/ANASTAS.ttf);
+  }
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+::selection {
+    background: rgba(255, 255, 255, .1);
+}
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.0;
+    color: #000;
+    background-color: #fff;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.JmeFont {
+    font-size:20px !important;
+    font-family: 'Anastasia Regular';
+    margin-top: 1px;
+    padding-left: 29px;
+}
+
+.font-i {
+    margin-right: .6rem;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left:10px;
+}
+
+    ul > li > a {
+        padding: 7px 17px;
+        border-radius: 2px;
+        border-bottom: 1px solid #eee;
+    }
+
+#accordion1 li.panel {
+    margin-bottom: 2px;
+}
+.date-box{
+    border-width: 0 0 0 0 !important;
+}

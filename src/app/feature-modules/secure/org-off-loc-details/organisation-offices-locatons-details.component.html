@@ -1,0 +1,167 @@
+<div class="row pull-right " id="bread">
+    <ol class="breadcrumb breadcrumb-arrow">
+        <li><a href="#">Organisation Location</a></li>
+        <li class="active"><span>Organisation Location</span></li>
+    </ol>
+</div>
+<div id="pnlOrganizationDetails" class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Organization Location</h4>
+    </div>
+    <div class="card-body">
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Nature of Office</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                    <span class="label-control">Address</span>
+                                    <textarea rows="2" cols="50" class="form-control">
+                                       
+                                    </textarea>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span>Country</span>
+                                    <select class="form-control">
+			                            <option value="--Select Status--">--Select Status--</option>
+			                            <option>Coutry1</option>
+			                            <option>Coutry2</option>
+			                            <option>Coutry3</option>
+		                            </select>
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span>State</span>
+                                <select class="form-control">
+                                    <option value="--Select Status--">--Select Status--</option>
+                                    <option>State1</option>
+                                    <option>State2</option>
+                                    <option>State3</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span>City</span>
+                                <select class="form-control">
+                                    <option value="--Select Status--">--Select Status--</option>
+                                    <option>City1</option>
+                                    <option>City2</option>
+                                    <option>City3</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Phone No</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span  class="label-control">Fax No.</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span  class="label-control">Mobile No.</span>
+                            <input type="text" class="form-control">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="form-group">
+                            <span  class="label-control">Email Id</span>
+                            <input type="text" class="form-control">
+                        </div>
+                     </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                        <div class="form-group">
+                            <span  class="label-control">Labor Certification No</span>
+                            <input type="text" class="form-control">
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <span  class="label-control">Other Licenses Details</span>
+                        <input type="text" class="form-control">
+                    </div>
+                 </div>
+                 
+        </div>
+            <div class="row pull-right m-b-30 m-r-10">
+                   <div class="col-md12">
+                            <input type="submit" value="Add Organisation" class="btn btn-info">
+                            <input type="submit" value="Add Management" class="btn btn-info">
+                            <input type="submit" value="Add Location" class="btn btn-info">
+                            <input type="submit" value="Save" class="btn btn-info">
+                            <input type="submit" value="Modify" class="Modify">
+                            <input type="submit" value="Clear" class="btn btn-info">
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Organization List</h4>
+    </div>
+    <div class="card-body" style="overflow-y:auto">
+            <div class="row m-b-25" >
+                    <div class="col-md-12" >
+                            <div>
+                                    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" cellpadding="4" id="grdOrganizations">
+                            <tbody>
+                                    <tr>
+                                            <th>S.No</th>
+                                            <th>Nature of Office</th>
+                                            <th>Address</th>
+                                            <th>Country</th>
+                                            <th>State</th>
+                                            <th>City</th>
+                                            <th>Phone No.</th>
+                                            <th>Fax No</th>
+                                            <th>Mobile No</th>    
+                                            <th>Email Id</th>
+                                            <th>Labour Certification No</th>
+                                            <th>Other Licenses Details</th>                                 
+                                    </tr>
+                                    <tr>
+                                            <td>
+                                                    <span>1</span>
+                                            </td>
+                                            <td>
+                                                    <a href="#">Aqua Tex </a>
+                                            </td>
+                                            <td>Private Limited</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>Na</td>
+                                            <td>
+                                                    <a class="btn btn-info" href="#"><i class="fa fa-edit"></i></a>
+                                                    <a class="btn btn-danger" href="#"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                    </tr>
+                            </tbody>
+                                    </table>
+                            </div>
+                </div>
+            </div>
+    </div>
+</div>

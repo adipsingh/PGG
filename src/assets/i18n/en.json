@@ -1,0 +1,26 @@
+{
+    "title": "AquaEBS",
+    "menuItemTitle1":"Organisation Management",
+    "menuItemTitle2":"Administration & Users",
+    "menuItemTitle3":"Human Resource Management",
+    "menuItemHeading1":"Master",
+        "submenu1": "Administration & Users",
+        "submenu2":"Human Resource Management",
+        "submenu3":"Plantations & Harvesting",
+        "submenu4":"Purchase Management",
+        "submenu5":"Production Process Filling & Ware House Division",
+        "submenu6":"Sales & CRM",
+        "submenu7":"Quality Control Management",
+        "submenu8":"Packing & General Material Management",
+        "submenu9":"Accounts & Finance Management",
+        "submenu10":"Management Information Systems",
+        "submenu11":"User Manual & Help",
+        "submenu12":"Farmers Agreement",
+        "submenu13":"Feed and Input Transfer",
+        "submenu14":"Plantation Scheduling",
+        "submenu15":"Raw Material Stocks",
+        "submenu16":"Crop Rate"
+        
+
+
+}

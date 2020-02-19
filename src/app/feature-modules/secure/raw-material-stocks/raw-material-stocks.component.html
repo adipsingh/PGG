@@ -1,0 +1,206 @@
+<div class="row pull-right " id="bread">
+    <ol class="breadcrumb breadcrumb-arrow">
+        <li><a href="#">Purchase Management</a></li>
+        <li class="active"><span>Raw Material Stocks</span></li>
+    </ol>
+</div>
+<div  class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Raw Material Stocks</h4>
+    </div>
+    <div class="card-body">
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Stock Date</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                    <span class="label-control">Stock No</span>
+                                    <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Area Name</span>
+                                <select class="form-control">
+                                    <option value="--Select Status--">--Select Status--</option>
+                                    <option>Area Name 1</option>
+                                    <option>Area Name 2<option>
+                                    <option>Area Name 3</option>
+                                </select>
+                    
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Area Code</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                                <span>Material Group</span>
+                                <select class="form-control">
+                                    <option value="--Select Status--">--Select Status--</option>
+                                    <option>Material Group 1</option>
+                                     <option>Material Group 2</option>
+                                     <option>Material Group 3</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span>Material Name</span>
+                                <select class="form-control">
+                                    <option value="--Select Status--">--Select Status--</option>
+                                    <option>Material Name 1</option>
+                                     <option>Material Name 2</option>
+                                     <option>Material Name 3</option>
+                                </select>
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span>UOM</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span>Total / Detailed Qty</span>
+                            <select class="form-control">
+                                <option value="--Select Status--">--Select Status--</option>
+                                <option>Total / Detailed Qty 1</option>
+                                <option>Total / Detailed Qtyy 2</option>
+                                <option>Total / Detailed Qty 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <span>Total Quantity (UOM)</span>
+                            <input type="text" class="form-control">
+                    </div>
+            </div>               
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+                <div class="form-group">
+                    <span>Avg. Rate</span>
+                    <input type="text" class="form-control">
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <span>Total Material Cost</span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>  
+</div>
+</div>
+<div  class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Stock Details</h4>
+    </div>
+    <div class="card-body">
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Lot / GRN Date</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                    <span class="label-control">Lot / GRN No </span>
+                                    <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Quantity</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4">
+                            <div class="form-group">
+                                <span class="label-control">Rate</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                                <span>Amount</span>
+                                <input type="text" class="form-control">
+                            </div>
+                    </div>
+                 
+            </div>
+    </div>
+</div>
+<div  class="card">
+    <div class="card-header card-header-text" data-background-color="rose">
+            <h4 class="card-title"><i class="fa fa-table m-r-10"></i>Lot / GRN Details</h4>
+    </div>
+    <div class="card-body" style="overflow-y:auto">
+            <div class="row m-b-25" >
+                    <div class="col-md-12" >
+                            <div>
+                                    <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" cellpadding="4" id="grdOrganizations">
+                            <tbody>
+                                    <tr>
+                                            <th>S.No</th>
+                                            <th>Lot / GRN Details</th>
+                                            <th>Lot / GRN No</th>   
+                                            <th>Quantity</th>   
+                                            <th>Rate</th>         
+                                            <th>Amount</th>                             
+                                    </tr>
+                                    <tr>
+                                            <td>
+                                                    <span>1</span>
+                                            </td>
+                                            <td>
+                                                    Na
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                    </tr>
+                            </tbody>
+                                    </table>
+                            </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div  class="card">
+        <div class="row pull-right btSection">
+                <div class="col-md12">
+                         <input type="submit" value="Plantation New Sch." class="btn btn-info">
+                         <input type="submit" value="Save" class="btn btn-info">
+                         <input type="submit" value="Find" class="btn btn-info">
+                         <input type="submit" value="Modify" class="Modify">
+                         <input type="submit" value="Clear" class="btn btn-info">
+                 </div>
+         </div>
+</div>
